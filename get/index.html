@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Télécharger Blue Sky</title>
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+       max-width:420px;margin:0 auto;padding:48px 24px;text-align:center;
+       background:#0b1b2b;color:#fff}
+  h1{font-size:1.5rem;margin-bottom:8px}
+  p{opacity:.75;margin-bottom:32px}
+  a.btn{display:block;padding:16px;margin:12px 0;border-radius:12px;
+        background:#fff;color:#0b1b2b;text-decoration:none;font-weight:600}
+</style>
+</head>
+<body>
+  <h1>Blue Sky</h1>
+  <p>Le calendrier des évènements parachutisme</p>
+  <a class="btn" href="https://apps.apple.com/app/id6769322783">Télécharger sur l'App Store</a>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.blueskydive.myapp">Télécharger sur Google Play</a>
+<script>
+(function () {
+  var ua = navigator.userAgent || "";
+  var ios = /iPad|iPhone|iPod/.test(ua) ||
+            (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  var android = /Android/.test(ua);
+  if (ios) location.replace("https://apps.apple.com/app/id6769322783");
+  else if (android) location.replace("https://play.google.com/store/apps/details?id=com.blueskydive.myapp");
+})();
+</script>
+</body>
+</html>
